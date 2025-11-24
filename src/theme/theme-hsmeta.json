@@ -1,0 +1,13 @@
+{
+  "uid": "my-cool-theme",
+  "type": "theme",
+  "config": {
+    "themePath": "axl",
+    "secretNames": []
+  }
+}
+
+
+
+
+
