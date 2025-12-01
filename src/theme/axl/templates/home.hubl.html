@@ -61,4 +61,54 @@
   {% include_dnd_partial path='../sections/multi-column-content.hubl.html' %}
 
 {% end_dnd_area %}
+
+{# New DND area with card module section #}
+
+{% dnd_area 'card_dnd_area'
+  label='Card section',
+  class='body-container body-container--cards'
+%}
+  {% dnd_section %}
+    {% dnd_module
+      path='../modules/card',
+      card=[
+        {
+          image: {
+            alt : 'Card image',
+            'loading': 'lazy',
+            'max_height': 230,
+            'max_width': 230,
+            'size_type': 'auto_custom_max',
+            'src': get_asset_url('../images/phone.png')
+          },
+          'text': '<h3>Card Title 1</h3><p>Card description text goes here.</p>',
+        },
+        {
+          image: {
+            alt : 'Card image',
+            'loading': 'lazy',
+            'max_height': 230,
+            'max_width': 230,
+            'size_type': 'auto_custom_max',
+            'src': get_asset_url('../images/email.png')
+          },
+          'text': '<h3>Card Title 2 </h3><p>Card description text goes here.</p>',
+        },
+        {
+          image: {
+            alt : 'Card image',
+            'loading': 'lazy',
+            'max_height': 230,
+            'max_width': 230,
+            'size_type': 'auto_custom_max',
+            'src': get_asset_url('../images/phone.png')
+          },
+          'text': '<h3>Card Title 3</h3><p>Card description text goes here.</p>',
+        }
+      ]
+    %}
+    {% end_dnd_module %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
+
 {% endblock body %}

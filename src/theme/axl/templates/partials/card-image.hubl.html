@@ -1,0 +1,10 @@
+{% if image.src %}
+  {% set sizeAttrs = 'width="{{ image.width }}" height="{{ image.height }}"' %}
+  {% if image.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+  {% elif image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ image.max_width }}" height="{{ image.max_height }}" style="max-width: 100%; max-height: auto;"' %}
+  {% endif %}
+  {% set loadingAttr = image.loading != 'disabled' ? 'loading="{{ image.loading }}"' : '' %}
+  <img class="card__image" src="{{ image.src }}" alt="{{ image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
