@@ -42,7 +42,7 @@
   {% for card in module.card %}
     <section class="cards__card card">
       {% set image = card.image %}
-      {% include "../../templates/partials/card-image.hubl.html" %}
+      {% include "../../axl/templates/partials/card-image.hubl.html" %}
       {% if card.text %}
         <div class="card__text">
           {{ card.text }}
