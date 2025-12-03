@@ -4,7 +4,6 @@
   height: 100%;
   background-size: cover !important;
   background-position: top !important;
-  padding-bottom: 70px;
 }
 
 .homepageBanner__contentWrapper {
@@ -15,7 +14,6 @@
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 228px 0 30px;
 }
 
 .homepageBanner__title {
@@ -102,7 +100,8 @@
     margin-top: 0;
     padding-top: 125px;
     padding-bottom: 50px;
-    background: url(https://www.axelerant.com/hubfs/assets/images/home/xs-banner-grphic.svg) no-repeat;
+    background: url(https://www.axelerant.com/hubfs/assets/images/home/xs-banner-grphic.svg)
+      no-repeat;
     background-position: bottom;
     background-size: contain;
     height: 100%;

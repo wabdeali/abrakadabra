@@ -1,0 +1,30 @@
+<!--
+ templateType: section
+ label: Gradient Banner
+ description: "A gradient banner typically used at the top of a page highlighting a product or main topic."
+ isAvailableForNewContent: true
+-->
+
+<!--
+ templateType: section
+ label: Banner
+ description: "A banner typically used at the top of a page highlighting a product or main topic."
+ isAvailableForNewContent: true
+ screenshotPath: ../images/section-previews/banner.png
+-->
+{% dnd_section
+ padding={
+   'top': 200,
+   'right': 20,
+   'bottom': 200,
+   'left': 20
+ },
+ background_image={
+   'backgroundPosition': 'MIDDLE_CENTER',
+   'backgroundSize': 'cover',
+   'imageUrl': 'https://557351.hs-sites.com/hubfs/assets/images/home/banner-anim.gif',
+ },
+ max_width=778,
+ vertical_alignment='MIDDLE'
+%}
+{% end_dnd_section %}

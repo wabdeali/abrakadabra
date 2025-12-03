@@ -114,6 +114,6 @@ export const meta = {
   global: false,
   content_types: ["LANDING_PAGE", "SITE_PAGE"],
   host_template_types: ["PAGE", "BLOG_LISTING", "BLOG_POST"],
-  label: "AXL New - Home Banner",
+  label: "Home Banner",
   is_available_for_new_content: true,
 };
