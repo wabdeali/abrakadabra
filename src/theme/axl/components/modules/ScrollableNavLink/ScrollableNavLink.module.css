@@ -1,0 +1,19 @@
+.scrollableNavLink {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.scrollableNavLink:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.scrollableNavLink:active {
+  color: #004085;
+}
+
