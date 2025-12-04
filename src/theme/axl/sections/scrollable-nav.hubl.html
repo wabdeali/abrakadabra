@@ -1,0 +1,33 @@
+<!--
+  templateType: section
+  label: Scrollable Nav
+  isAvailableForNewContent: true
+  description: "Three column section with navigation links in the first column and content modules in the second and third columns."
+-->
+{% dnd_section
+  background_color={{ context.background_color || '#ffffff' }},
+  vertical_alignment='TOP'
+%}
+  {# First column - Navigation Links #}
+  {% dnd_column
+    offset=0,
+    width=3
+  %}
+    {% dnd_row %}
+      {% dnd_area %}
+      {% end_dnd_area %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+
+  {# Second and Third columns - Combined content area #}
+  {% dnd_column
+    offset=3,
+    width=9
+  %}
+    {% dnd_row %}
+      {% dnd_area %}
+      {% end_dnd_area %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
